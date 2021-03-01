@@ -44,7 +44,7 @@ var Pessoa = /** @class */ (function () {
         return this.carroPreferido;
     };
     Pessoa.prototype.comprarCarro = function (carro) {
-        return this.carro = carro;
+        return this.carro;
     };
     Pessoa.prototype.dizerCarroQueTem = function () {
         return this.carro;
@@ -71,4 +71,4 @@ concessionaria.mostrarListaDeCarros().map(function (carro) {
     }
     //console.log(carro)
 });
-console.log(cliente.dizerCarroQueTem);
+console.log(cliente.dizerCarroQueTem());
