@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Concerssionaria = void 0;
 var Concerssionaria = /** @class */ (function () {
     function Concerssionaria(endereco, listaDeCarros) {
         this.endereco = endereco;
@@ -14,4 +13,4 @@ var Concerssionaria = /** @class */ (function () {
     };
     return Concerssionaria;
 }());
-exports.Concerssionaria = Concerssionaria;
+exports.default = Concerssionaria;
