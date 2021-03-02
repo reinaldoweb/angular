@@ -1,5 +1,5 @@
 import Carro from './Carro'
-export default class Concerssionaria{
+export default class Concessionaria{
 
   private endereco: string
 

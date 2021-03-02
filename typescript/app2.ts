@@ -1,6 +1,6 @@
    import Carro from './Carro'
    import Pessoa from './Pessoa'
-   import Concerssionaria from './Concerssionaria'
+   import Concessionaria from './Concessionaria'
 
 
 /*----Criar Carros-----*/
@@ -14,7 +14,7 @@ let carroD = new Carro('Onix', 4)
 
 let listaDeCarros: Carro[] = [carroA, carroB, carroC, carroD]
 
-let concessionaria = new Concerssionaria('Rua Potiguar',listaDeCarros )
+let concessionaria = new Concessionaria('Rua Potiguar',listaDeCarros )
 
 
 /**Exibir a lista de carros */
