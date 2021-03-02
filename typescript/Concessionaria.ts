@@ -12,7 +12,6 @@ export default class Concessionaria implements ConcessionariaInterface {
         this.listaDeCarros = listaDeCarros
     }
 
-
     public fornecerEndereco() {
 
         return this.endereco

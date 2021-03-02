@@ -12,7 +12,6 @@ moto.acelerar()
 
 
 let concessionaria = new Concessionaria('', [])
-
 console.log(moto)
 console.log(carro)
 console.log(concessionaria.fornecerHorarioDeFuncionamento)

@@ -12,4 +12,3 @@ export default class Veiculo {
         return this.velocidade
     }
 }
-
