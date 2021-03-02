@@ -1,1 +1,1 @@
-# Type Script co Angular 4
+# Type Script com Angular 4
