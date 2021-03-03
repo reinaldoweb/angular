@@ -19,15 +19,15 @@ var CarroDao = /** @class */ (function () {
     };
     CarroDao.prototype.remover = function (id) {
         console.log('Lógica delete');
-        return new Carro_1.default('', '');
+        return new Carro_1.default('', 2);
     };
     CarroDao.prototype.selecionar = function (id) {
         console.log('lógica select');
-        return new Carro_1.default('', '');
+        return new Carro_1.default('', 2);
     };
     CarroDao.prototype.selecionarTodos = function () {
         console.log('Lógica getAll');
-        return [new Carro_1.default('', '')];
+        return [new Carro_1.default('', 2)];
     };
     return CarroDao;
 }());

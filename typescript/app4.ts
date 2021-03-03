@@ -5,6 +5,8 @@ import { PessoaDao } from './PessoaDao'
 import Pessoa from './Pessoa';
 import { CarroDao } from './CarroDao';
 import Carro from './Carro';
+import { MotoDao } from './MotoDao';
+import Moto from './Moto';
 
 let dao: ConcessionariaDao = new ConcessionariaDao()
 let concessionaria = new Concessionaria('', []);
@@ -21,3 +23,8 @@ let dao3: CarroDao = new CarroDao();
 let carro: Carro = new Carro('', 2); 
 
 dao3.inserir(carro);
+
+let dao4: MotoDao = new MotoDao()
+let moto: Moto = new Moto();
+
+dao4.selecionarTodos();

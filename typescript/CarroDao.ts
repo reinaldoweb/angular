@@ -16,15 +16,15 @@ export class CarroDao implements DaoInterface {
   }
   remover(id: number): Carro {
     console.log('Lógica delete')
-    return new Carro('', '')
+    return new Carro('', 2)
   }
   selecionar(id: number): Carro {
     console.log('lógica select')
-    return new Carro('', '');
+    return new Carro('', 2);
   }
   selecionarTodos(): [any] {
     console.log('Lógica getAll')
-    return [new Carro('', '')]
+    return [new Carro('', 2)]
   }
 
 }
