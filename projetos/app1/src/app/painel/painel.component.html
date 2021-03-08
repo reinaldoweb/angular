@@ -18,7 +18,7 @@
         <h3>
          {{ insstrucao }}
         </h3>
-        <p>{{ frases[0].fraseEng }}</p>
+        <p>{{ rodadaFrase.fraseEng }}</p>
 
       </div>
     </div>
@@ -32,7 +32,7 @@
     <div class="row">
       <div class="col">
         <div class="d-flex justify-content-end">
-          <button type="button" class="btn btn-primary">Verificar</button>
+          <button type="button" class="btn btn-primary"(click)= "verificarResposta()">Verificar</button>
         </div>
       </div>
     </div>

@@ -14,15 +14,25 @@ export class PainelComponent implements OnInit {
   public insstrucao: string = 'Traduza a frase'
   public resposta: string
 
+  public rodada: number = 0
+  public rodadaFrase: Frase
 
-  constructor() { console.log(this.frases) }
+
+  constructor() {
+    this.rodadaFrase = this.frases[this.rodada]
+    console.log(this.rodadaFrase)
+  }
 
   ngOnInit(): void {
   }
 
   public atualizaResposta(resposta: Event): void {
     this.resposta = ((<HTMLInputElement>resposta.target).value)
-    console.log(this.resposta)
+    // console.log(this.resposta)
+  }
+
+  public verificarResposta(): void {
+    console.log('Verificar respostas: ', this.resposta)
   }
 
 }
