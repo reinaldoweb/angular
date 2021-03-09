@@ -17,6 +17,8 @@ export class PainelComponent implements OnInit {
   public rodada: number = 0
   public rodadaFrase: Frase
 
+  public progresso: number = 0
+
 
   constructor() {
     this.rodadaFrase = this.frases[this.rodada]
@@ -32,7 +34,24 @@ export class PainelComponent implements OnInit {
   }
 
   public verificarResposta(): void {
-    console.log('Verificar respostas: ', this.resposta)
+
+    if (this.rodadaFrase.frasePtBr == this.resposta) {
+      alert('A tradução está correta!')
+
+        //trocar pergunta da jogada
+        this.rodada++
+
+        //progresso
+        this.progresso = this.progresso + (100 / this.frases.length)
+
+
+        //Atualiza o objeto redadafrase
+        this.rodadaFrase = this.frases[this.rodada]
+    } else {
+      alert('A tradução está errada!')
+    }
+
+
   }
 
 }
