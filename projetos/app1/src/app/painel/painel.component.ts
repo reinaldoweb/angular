@@ -44,14 +44,13 @@ export class PainelComponent implements OnInit {
 
       //progresso
       this.progresso = this.progresso + (100 / this.frases.length)
-
       //Atualiza o objeto redadafrase
       this.atualizaRodada()
     } else {
       //Diminuir a varivael tentativas
       this.tentativas--
       if(this.tentativas === -1){
-        alert('Você já utilizou todas as tentivas!')
+        alert('Você já utilizou todas as suas tentivas!')
       }
     }
 
